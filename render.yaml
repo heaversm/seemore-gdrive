@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: gdrive-seemore
+    env: python
+    plan: starter
+    buildCommand: poetry install
+    startCommand: gunicorn app:app --chdir ./provider
+    autoDeploy: false
