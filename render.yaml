@@ -3,6 +3,7 @@ services:
     name: gdrive-seemore
     env: python
     plan: starter
-    buildCommand: poetry install
-    startCommand: gunicorn app:app --chdir ./provider
+    buildCommand: poetry install --no-root
+    #startCommand: gunicorn app:app --chdir ./provider
+    startCommand: poetry run flask --app provider --debug run --port 5000
     autoDeploy: false
