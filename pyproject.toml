@@ -6,7 +6,7 @@ authors = ["Mike Heavers <mheavers@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.10"
+python = "3.12.4"
 flask = "2.2.5"
 requests = "^2.31.0"
 connexion = {extras = ["flask"], version = "^3.1.0"}
